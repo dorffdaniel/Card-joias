@@ -4,13 +4,77 @@
     box-sizing: border-box;
 }
 
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 12em;
+    position: absolute;
+    background: transparent;
+    transition: all ease-in-out 1s;
+}
+
+.head:hover{
+    background: #000000;
+}
+
+.head h1{
+    color: #fff;
+    font-size: 2.2em;
+}
+
+.head nav ul li{
+    margin: 20px 0;
+}
+
+.head nav ul li a{
+     color: #fff;
+     font-size: 1.8em;
+}
+
+.head nav ul li a:hover{
+    color: #ccc;
+}
+
+main{
+    background: url(src/imagem/pexels-abel-kayode-155872537-10870191.jpg) no-repeat center;
+    height: 100vh;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 20px;
-    background: url(src/imagem/pexels-abel-kayode-155872537-10870191.jpg) no-repeat center;
+    gap: 10px;
+    margin-bottom: 5em;
+}
+
+.conteudo-principal .btn{
+    width: 4em;
+    height: 2em;
+    font-size: 2em;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.conteudo-principal .btn:hover{
+    box-shadow: 0 0 5px #fff,
+    0 0 10px #ccc,
+    0 0 15px #747373, 
+    0 0 25px #000000;
 }
 
 .card{
@@ -28,7 +92,6 @@
     font-size: 50px;
     font-weight: 500;
 }
-
 
 .card-image .diamant{
     width: 100%;
@@ -54,8 +117,6 @@
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0px 0px;
 }
-
-
 
 .card-image:hover::after{
     opacity: 1;
@@ -118,4 +179,19 @@
 
 .card-cristal:hover::after{
     opacity: 1;
+}
+
+.foter{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 1em;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    bottom: 10px;
+} 
+
+.foter h3{
+    font-size: 1em;
 }

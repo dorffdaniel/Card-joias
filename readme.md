@@ -1,5 +1,5 @@
 # PROJETO
-<img src="src/design/joias.gif">
+<img src="src/design/design-cardjoias.png">
 
 ## Linguagem utilizadas
 - HTML
